@@ -16,7 +16,7 @@ func RecordDump() {
 		rand := rand.New(rand.NewSource(time.Now().UnixNano()))
 		rvalue := rand.Intn(100000000)
 		now := time.Now()
-		filename := fmt.Sprintf("core[%d%02d%02d%02d%02d%02d%d]_%d.dump", now.Year(), now.Month(), now.Day(), now.Hour(), now.Minute(),
+		filename := fmt.Sprintf("core_%d%02d%02d%02d%02d%02d%d_%d.dump", now.Year(), now.Month(), now.Day(), now.Hour(), now.Minute(),
 			now.Second(), now.Nanosecond(), rvalue)
 
 		var f *os.File
@@ -43,9 +43,11 @@ func SafeCallNull(callback func()) {
 	callback()
 }
 
-func SafeGo(f func() error) error {
-	defer RecordDump()
-	return f()
+func SafeGo(f func() error) {
+	go func() {
+		defer RecordDump()
+		f()
+	}()
 }
 
 type Group struct {
