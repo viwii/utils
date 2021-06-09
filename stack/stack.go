@@ -43,6 +43,11 @@ func SafeCallNull(callback func()) {
 	callback()
 }
 
+func SafeGo(f func() error) error {
+	defer RecordDump()
+	return f()
+}
+
 type Group struct {
 	cancel func()
 

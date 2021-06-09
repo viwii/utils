@@ -1,8 +1,9 @@
 package utils
 
 import (
-	"github.com/arl/statsviz"
 	"net/http"
+
+	"github.com/arl/statsviz"
 )
 
 func StartPporfService(ipstr string) {

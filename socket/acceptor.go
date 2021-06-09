@@ -1,12 +1,13 @@
 package socket
 
 import (
-	"deal/pkg/stack"
-	"deal/pkg/utils"
 	"net"
 	"os"
 	"strings"
 	"sync"
+
+	"github.com/viwii/utils/stack"
+	"github.com/viwii/utils/utils"
 )
 
 const (

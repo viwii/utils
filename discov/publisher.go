@@ -1,8 +1,8 @@
 package discov
 
 import (
-	"deal/pkg/discov/internal"
-	"deal/pkg/stack"
+	"github.com/viwii/utils/discov/internal"
+	"github.com/viwii/utils/stack"
 
 	"log"
 

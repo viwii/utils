@@ -2,13 +2,14 @@ package internal
 
 import (
 	"context"
-	"deal/pkg/stack"
 	"fmt"
 	"log"
 	"sort"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/viwii/utils/stack"
 
 	"go.etcd.io/etcd/clientv3"
 )

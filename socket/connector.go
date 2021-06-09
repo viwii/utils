@@ -2,12 +2,13 @@ package socket
 
 import (
 	"bytes"
-	"deal/pkg/stack"
-	"deal/pkg/utils"
 	"encoding/gob"
 	"errors"
 	"net"
 	"sync"
+
+	"github.com/viwii/utils/stack"
+	"github.com/viwii/utils/utils"
 )
 
 type StopWrite struct{}

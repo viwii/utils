@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"deal/pkg/discov/internal"
+	"github.com/viwii/utils/discov/internal"
 )
 
 const (

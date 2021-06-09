@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"deal/pkg/stack"
+	"github.com/viwii/utils/stack"
 )
 
 var (

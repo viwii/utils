@@ -4,7 +4,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"deal/pkg/discov/internal"
+	"github.com/viwii/utils/discov/internal"
 )
 
 type (

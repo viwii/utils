@@ -2,12 +2,13 @@ package socket
 
 import (
 	"bytes"
-	"deal/pkg/utils"
 	"encoding/gob"
 	"errors"
 	"fmt"
 	"net"
 	"sync"
+
+	"github.com/viwii/utils/utils"
 
 	"github.com/golang/protobuf/proto"
 )
